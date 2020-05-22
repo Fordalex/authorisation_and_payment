@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block page_title %}{{ user }}'s Profile{% endblock %}
+
+{% block page_heading %}{{ user }}'s Profile{% endblock %}
+
+{% block content %}
+
+<h3>This is your profile</h3>
+
+<p>{{ profile.username }}</p>
+<p>{{ profile.email }}</p>
+
+<a href="{% url 'delete_account' %}" class="btn btn-danger">Delete Account</a>
+
+{% for item in items %}
+
+    <p>{{ item.name }}</p>
+
+{% endfor %}
+
+{% endblock %}

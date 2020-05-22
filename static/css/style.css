@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navigation {
+    height: 55px;
+    width:100vw;
+    background: linear-gradient(rgb(158, 255, 242), rgb(141, 255, 240));
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    margin-right: 5px;
+    padding: 10px 15px;
+}

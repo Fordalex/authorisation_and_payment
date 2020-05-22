@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block page_title %}Login Page{% endblock %}
+
+{% block page_heading %}User Page{% endblock %}
+
+{% block content %}
+
+<form method="POST">
+    {% csrf_token %}
+    <label>Username</label>
+    <input name="username" class="form-control">
+    <lable>Password</lable>
+    <input name="password" type="password" class="form-control">
+    <button type="submit" class="btn btn-success">Login</button>
+</form>
+<p><a href="{% url 'password_reset' %}">Reset Password</a></p>
+{% endblock %}
